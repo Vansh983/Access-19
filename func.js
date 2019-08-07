@@ -24,22 +24,28 @@ $(document).ready(function () {
     $('.bar3').toggleClass('bar3_ac')
     $('.lmune').toggleClass('lmune_ac')
   })
+  $('.tag').click(function(){
+    $('.bar1').toggleClass('bar1_ac')
+    $('.bar2').toggleClass('bar2_ac')
+    $('.bar3').toggleClass('bar3_ac')
+    $('.lmune').toggleClass('lmune_ac')
+  })
   $('.bx2').click(function(){
     $('.nin').addClass('hide');
     $('.bx2').addClass('hide');
     $('.thank').addClass('show');
   })
-  $('.it1').click(function(){
+  $('.it1, .tag1').click(function(){
     $('body, html').animate({scrollTop: $('.land').offset().top}, 500)
   })
-  $('.it2').click(function(){
+  $('.it2, .tag2').click(function(){
     $('body, html').animate({scrollTop: $('.bg2, .feat2').offset().top}, 500)
   })
-  $('.it3').click(function(){
-    $('body, html').animate({scrollTop: $('.feature1').offset().top}, 500)
-  })
-  $('.it4').click(function(){
+  $('.it3, .tag3').click(function(){
     $('body, html').animate({scrollTop: $('.bg4').offset().top}, 500)
+  })
+  $('.it4, .tag4').click(function(){
+    $('body, html').animate({scrollTop: $('.card-t').offset().top}, 500)
   })
 
 })

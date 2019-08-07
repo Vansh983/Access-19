@@ -351,16 +351,7 @@ input, input:hover, input:focus{
   padding-top: 10vh;
 }
 
-.newsletter{
-  position: relative;
-  z-index: 10;
-  background-color: #fff;
-  padding-top: 10vh;
-  padding-bottom: 10vh;
-  box-shadow: 0px -2px 9px 0px #ccc;
-  height: 70vh;
-  transform: translateY(10vh);
-}
+
 .nin{
   border: none;
   border-bottom: 2px solid #6a6aee;
@@ -505,6 +496,7 @@ a:link{
   background-color: #3e3e3e;
   box-shadow: 0px 2px 15px -3px #000;
   border-bottom: 5vh solid #252525;
+  margin-bottom: 15vh;
 }
 .divider{
   width: 100%;
@@ -526,7 +518,7 @@ a:link{
 .header-c{
   margin-left: 10%;
   font-size: 40px;
-  color: #eb466b;
+  color: #FF8F00;
   font-family: 'Montserrat';
   text-align: left;
 }
@@ -535,7 +527,7 @@ a:link{
   margin-left: 10.5%;
   width: 50px;
   margin-top: 2%;
-  background-color: #eb466b;
+  background-color: #FF8F00;
 }
 
 .in{
@@ -552,27 +544,35 @@ a:link{
   font-family: 'Raleway';
   font-weight: lighter;
 }
+.tag{
+  font-size: 30px;
+  color: #fff;
+  margin-top: 7vh;
+  cursor: pointer;
+}
 .butt{
   padding: 12px 30px 12px 30px;
-  margin-left: 10vw;
-  margin-top: 5vh;
+  margin-left: 14vw;
+  margin-top: 4vh;
   font-family: 'Montserrat';
   border: none;
   outline: none;
   border: 1px solid #fff;
   cursor: pointer;
-  color: #eb466b;
+  color: #FF8F00;
+  font-size: 15px;
+  width: fit-content;
   background-color: #fff;
 }
-.footer{
-  background-color: #fff;
-  font-size: 17px;
-  color: #719fb5;
-  padding-top: 10vh;
+.f{
+  font-size: 20px;
+  color: #ff8f00;
+  margin: auto;
+  text-align: center;
   padding-bottom: 10vh;
   text-align: center;
   letter-spacing: 3px;
-  font-family: 'quicksand';
+  font-family: 'Montserrat';
 }
 .vid{
   height: 100vh;
@@ -685,6 +685,10 @@ video{
       margin-top: 65vh;
       margin-bottom: 15vh;
     }
+    .f{
+      box-shadow: inset 0px -40vh 0 0 #ff8f00;
+      color: #fff
+    }
 }
 
 @media screen and (max-width:700px) {
@@ -730,5 +734,11 @@ video{
   }
   .vid{
     display: none;
+  }
+  .butt{
+    margin-left: 7vw;
+  }
+  .header-c{
+    font-size: 22px;
   }
 }
