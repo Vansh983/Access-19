@@ -22,6 +22,7 @@ $(document).ready(function () {
     $('.bar1').toggleClass('bar1_ac')
     $('.bar2').toggleClass('bar2_ac')
     $('.bar3').toggleClass('bar3_ac')
+    $('.lmune').toggleClass('lmune_ac')
   })
   $('.bx2').click(function(){
     $('.nin').addClass('hide');

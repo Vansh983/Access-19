@@ -156,12 +156,11 @@ ul{
 }
 .lmune{
   position: absolute;
+  display: none;
   width: 100vw;
   height: 100vh;
   overflow: hidden;
   background-color: #13171c;
-  top: -20%;
-  visibility: hidden;
 }
 .menu2_ac{
   visibility: visible;
@@ -337,7 +336,8 @@ input, input:hover, input:focus{
   font-size: 18px;
 }
 .head3{
-  padding-top: 10vh;
+  padding-top: 5vh;
+  padding-bottom: 5vh;
 }
 .l3{
   background-color: #fff;
@@ -398,10 +398,6 @@ input, input:hover, input:focus{
 }
 .l4{
   width: 37vw;
-}
-footer{
-  background-color: #FF8F00;
-  height: 20vh;
 }
 .show{
   opacity: 1;
@@ -504,7 +500,7 @@ a:link{
   height: 55vh;
   width: 80%;
   margin: auto;
-  margin-top: 20vh;
+  margin-top: 5vh;
   /* border-radius: 2%; */
   background-color: #3e3e3e;
   box-shadow: 0px 2px 15px -3px #000;
@@ -568,8 +564,25 @@ a:link{
   color: #eb466b;
   background-color: #fff;
 }
-.butt:hover{
-
+.footer{
+  background-color: #fff;
+  font-size: 17px;
+  color: #719fb5;
+  padding-top: 10vh;
+  padding-bottom: 10vh;
+  text-align: center;
+  letter-spacing: 3px;
+  font-family: 'quicksand';
+}
+.vid{
+  height: 100vh;
+}
+video{
+  height: auto;
+  width: 100%;
+}
+.subhead{
+  font-size: 40px;
 }
 #mess{
   padding-top: 30px;
@@ -668,6 +681,10 @@ a:link{
     .bars{
       visibility: hidden;
     }
+    .vid{
+      margin-top: 65vh;
+      margin-bottom: 15vh;
+    }
 }
 
 @media screen and (max-width:700px) {
@@ -682,6 +699,9 @@ a:link{
   }
   .bx2{
     width: 60vw;
+  }
+  .lmune_ac{
+    display: block;
   }
   #container {
     font-size: 8vmin;
@@ -707,5 +727,8 @@ a:link{
     width: 20vw;
     position: fixed;
     z-index: 30;
+  }
+  .vid{
+    display: none;
   }
 }
